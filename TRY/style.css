@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    object-position: center center;
+    object-fit: cover;
+    
+}
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: block;
+    margin-left: auto;
+}
+
+.Main-Box {
+    width: 60%;
+    max-width: 1000px;
+    min-width: 700px;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    background-color: white;
+    align-content: stretch;
+    justify-content: center;
+    border-radius: 3%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Perfume-Image {
+    width: 100%;
+    display: flex;
+    
+}
+
+.Text {
+    display: flex;
+    text-align: left;
+    margin: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.imagen-perfume {
+    border-radius: 3% 0 0 3%;
+}
+
+
+
+.boton-comprar {
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color:hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+}
+
+#carrito {
+    background-image: url(images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 33% center;
+
+}
+
+.boton-comprar:hover{
+    background-color:hsl(159, 36%, 26%)
+}
+
+.boton-comprar:focus{
+    outline: 4px solid red;
+}
+
+.carrito{
+    background-image: url(images/icon-cart.svg);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 30px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    color: hsl(212, 21%, 14%);
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+
+.precio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tachado {
+    margin-left: 30px;
+}
+
+@media (max-width: 720px){
+    .Main-Box {
+        display: flex;
+        flex-direction: column;
+        min-width: 430px;
+        height: auto;
+    }
+
+    .Perfume-Image{
+        height: 30%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .imagen-perfume {
+        height: 300px;
+        border-radius: 3% 3% 0 0;
+    }
+
+    content {
+        min-height: 600px;
+    }
+
+    .Text {
+        display: flex;
+        margin: 30px 30px;
+
+    }
+
+    .Text p{
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    .Text h1{
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    .Text .precio{
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+}
